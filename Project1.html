@@ -9,6 +9,7 @@
 <div id ="Banner">
 <img src="Banner.png" alt="Banner :D" class="center">
 </div>
+
 <div id ="NavBar">
 <table style="width:100%" >
 <tr style="height:80px">
@@ -26,34 +27,90 @@
 </tr>
 </table>
 </div>
+
 <div id ="LeftSide">
 <img src="Heartstopperleaves.png" alt="Heartstopper Leaves :D" style="width:300px;height:880px">
 </div>
+
 <div id ="Main">
-<p> HOME PAGE <3 </p>
+<br>
+<br>
+<h1> Colour slider :) </h1>
+<br>
+<table style="width:100%">
+<tr>
+<th>
+Red Channel
+</th>
+<th>
+Green Channel
+</th>
+<th>
+Blue Channel
+</th>
+</tr>
+<tr>
+<td>
+<input onchange = "sliders()" type="range" min"1" max="255" Value="50" id="red">
+</td>
+<td>
+<input onchange = "sliders()" type="range" min"1" max="255" Value="50" id="green">
+</td>
+<td>
+<input onchange = "sliders()" type="range" min"1" max="255" Value="50" id="blue">
+</td>
+</tr>
+</table>
+<table style="width:100%">
+<tr style="height:30px">
+<td style="background-color:#000;">
+<div id="rectangle"></div>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<h1> Random Colours! :) </h1>
+<br>
+<div class="center">
+<button class="button" onclick = "Button()">
+Click for Inspiration!
+</button>
 </div>
+<table style="width:100%">
+<tr style="height:30px">
+<td style="background-color:#000;">
+<div id="random"></div>
+</td>
+</tr>
+</table>
+<br>
+<h1>Colour Palettes :)</h1>
+<iframe class="center" width=500 height=400 src="https://colorhunt.co/" style="border:5px solid black;border-radius:10px;background-color: #F2BCBC;"></iframe>
+</div>
+
 <div id = "RightSide">
 <img src="Heartstopperleaves.png" alt="Heartstopper Leaves :D" style="width:300px;height:880px">
 </div>
+
 <div id ="Footer">
 <table style="width:100%">
 <tr>
 <td style="background-color:#B7EEB1;width:85px;text-align:right;">
-<img src="Leaf.png" alt="Banner :D" style="width:80px;height:80px;">
+<img src="Leaf.png" alt="FooterLeaves! :D" style="width:80px;height:80px;">
 </td>
 <td style="background-color:#B7EEB1">
 <p> Email Me! </p>
 <ul><a href="mailto:someone@example.com">gabyemerson18@hotmail.com</ul>
 </td>
 <td style="background-color:#B7EEB1;width:85px;text-align:right;">
-<img src="Leaf.png" alt="Banner :D" style="width:80px;height:80px;">
+<img src="Leaf.png" alt="FooterLeaves! :D" style="width:80px;height:80px;">
 </td>
 </tr>
 </table>
 </div>
 
-
-
+<script src="Script1.js"></script>
 
 
 
