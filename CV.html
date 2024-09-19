@@ -34,17 +34,11 @@
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container centered-container">
-  <div id="adobe-dc-view" style="width: 800px;"></div>
-<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
-		adobeDCView.previewFile({
-			content:{location: {url: "CV_Up2196869.pdf"}},
-			metaData:{fileName: "GabriellaCV.pdf"}
-		}, {embedMode: "IN_LINE"});
-	});
-</script>
+
+<object class = "pdf-viewer" data="https://github.com/GabbaTheHutt18/GabbaTheHutt18.github.io/blob/98b797df07024a66b69293773610acc3815de765/CV_Up2196869.pdf" type="application/pdf" width="100%" height="600px">
+  <p>It appears you don't have a PDF plugin for this browser. You can <a href="https://github.com/GabbaTheHutt18/GabbaTheHutt18.github.io/blob/98b797df07024a66b69293773610acc3815de765/CV_Up2196869.pdf">click here to download the PDF file.</a></p>
+</object>
+
   
 </div>
 
