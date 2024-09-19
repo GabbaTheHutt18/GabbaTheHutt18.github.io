@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Gabriella Emerson </title>
+<link rel="stylesheet" type="text/css" href="TempStyle.CSS">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large green">Home</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="CV.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="CV.html" class="w3-bar-item w3-button w3-padding-large">CV</a>
+  </div>
+</div>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class=" w3-row overflow:auto">
+    <div class="w3-third w3-left-align" >
+    <br>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/aGaclbJgdGE" title="Gabriella Emerson NEA Computing Project" frameborder="0" allowfullscreen></iframe>
+  </div>
+    <div class="w3-twothird w3-left-align">
+      <h1 style="color: #3F7652;">Anxiety Antics</h1>
+       
+      <h5>Time Scale: 4 Months 
+        <br>
+        Solo Project
+        <br>
+        Languages: C#, SQLite, Xaml 
+        <br>
+        Software: Visual studio
+        <br>
+        A level Project​</h5>
+      <p>
+        A learning program - inspired by quizlet, created as part of an AQA A-level NEA. Please see attached project documentation, if interested in the whole process, includes ERDs, testing and source code. 
+      </p> 
+      <p>
+        Contributions:
+        <ul style="list-style-type:none;">
+          <li>Sole Programmer</li>
+          <li>Includes a recursive algorithm to scramble a string. </li>
+          <li>Database handling in SQLite: multiple, connected tables that interact with each other (Users, which contained Logins, 
+            a separate table for Question banks the user had created, as well as a database for each of the users’ scores on each game) </li>
+          <li>Account system: Users are able to login or create new accounts, reading and writing to a Database, which checks that there are no users with the same username. By logging in, the user is able to access information from different tables, 
+            they are able to access their Questions Banks and their own highscores. </li>
+          <li>Pairs: created a question and answer object from a selected question bank, 
+            the user could then drag the questions or answers to the other to score points. </li>
+          <li> Word scramble: Using a recursive algorithm, a country name would get scrambled and then the user would have to unscramble it, hints were also available,
+             as it read from the database to find out which continent it was on and what the first letter was. </li>
+          <li>Quiz: Simple question and answer, the user would select a question bank 
+            and then it would randomly select questions for the user to input answers into.</li>
+          <li> Question Banks: Users are able to create their own question banks, they are able to read, write, edit and delete them,
+             they are stored within a database and they are given an ID which means only the user that has created them has access to it. </li>
+          <li>Maps: If the database is empty, it is populated from a .txt file. Then the reader is able to select different countries from a drop down to read information about them. </li>
+          <li>User Stats: A merge sort lists the top highscores of each, as well as calculating the average score for each 
+            game and the percentile to compare their highest score to other users. </li>
+        </ul>
+         </p>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey">  
+  <p class="w3-large"><a href="mailto:gabyjemerson18@gmail.com" target="_blank">gabyjemerson18@gmail.com</a></p>
+  <div class="w3-xlarge w3-padding-small">
+    <a href ="https://github.com/GabbaTheHutt18" target="_blank"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+    <a href ="https://gaby18.itch.io/" target="_blank"><i class="fa-brands fa-itch-io w3-hover-opacity"></i></i></a>
+    <a href ="https://www.linkedin.com/in/gabriella-jane-emerson/" target="_blank"><i class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+ 
+</footer>
+
+
+
+
+<script src ="TempScript.js"></script>
+
+
+</body>
+</html>

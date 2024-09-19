@@ -24,3 +24,19 @@ body,h1,h2,h3,h4,h5,h6
     width: 800px;            /* Fixed width for the PDF viewer */
     max-width: 100%;         /* Ensure responsiveness */
 }
+.button {
+    background-color: #BADA55; 
+    border: none;
+    color: #000;
+    width: 200px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+  }
+  .button:hover{
+    background-color:#3F7652;
+  }
