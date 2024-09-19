@@ -1,0 +1,26 @@
+body,h1,h2,h3,h4,h5,h6 
+{
+    font-family: "Lato", sans-serif
+}
+
+.w3-bar,h1,button 
+{
+    font-family: "Montserrat", sans-serif
+}
+.fa-anchor,.fa-coffee {
+    font-size:200px
+}
+
+.green{
+    background-color:#3F7652
+}
+.centered-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically, if needed */
+    height: 100%;           /* Full viewport height, adjust as needed */
+}
+.pdf-viewer {
+    width: 800px;            /* Fixed width for the PDF viewer */
+    max-width: 100%;         /* Ensure responsiveness */
+}

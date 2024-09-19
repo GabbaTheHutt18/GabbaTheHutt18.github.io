@@ -2,60 +2,72 @@
 <html lang="en">
 <head>
 <title> Template </title>
-<link rel="stylesheet" type="text/css" href="StyleSheet.CSS">
+<link rel="stylesheet" type="text/css" href="TempStyle.CSS">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-
-<div id ="Banner">
-<img src="Banner.png" alt="Banner :D" class="center">
-</div>
-<div id ="NavBar">
-<table style="width:100%" >
-<tr style="height:80px">
-<th style="width:33%"> <a href="index.html">HOME </a></th>
-<th style="width:33%"> 
-<div class="dropdown">
-  <button class="dropbtn"><b>My Projects</b></button>
-  <div class="dropdown-content">
-    <a href="Project1.html">Link 1</a>
-    <a href="Project2.html">Link 2</a>
-    <a href="Project3.html">Link 3</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large green">Home</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="CV.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
   </div>
-</div> </th>
-<th style="width:33%"> <a href="AboutMe.html"> About Me! </a> </th>
-</tr>
-</table>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="CV.html" class="w3-bar-item w3-button w3-padding-large">CV</a>
+  </div>
 </div>
-<div id ="LeftSide">
-<img src="Heartstopperleaves.png" alt="Heartstopper Leaves :D" style="width:300px;height:880px">
-</div>
-<div id ="Main">
-<p> HOME PAGE <3 </p>
-</div>
-<div id = "RightSide">
-<img src="Heartstopperleaves.png" alt="Heartstopper Leaves :D" style="width:300px;height:880px">
-</div>
-<div id ="Footer">
-<table style="width:100%">
-<tr>
-<td style="background-color:#B7EEB1;width:85px;text-align:right;">
-<img src="Leaf.png" alt="Banner :D" style="width:80px;height:80px;">
-</td>
-<td style="background-color:#B7EEB1">
-<p> Email Me! </p>
-<ul><a href="mailto:someone@example.com">gabyemerson18@hotmail.com</ul>
-</td>
-<td style="background-color:#B7EEB1;width:85px;text-align:right;">
-<img src="Leaf.png" alt="Banner :D" style="width:80px;height:80px;">
-</td>
-</tr>
-</table>
+
+<!-- Header -->
+<header class="w3-container green w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Hello World!</h1>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1>Hello World!</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">I'm Gaby, a 2nd year Computer Games Technology student at the University of Portsmouth, but my background is Computer Science based - problem solving is my bread and butter! 
+        ​<br>
+        My programming interests are back-end development - I enjoy creating the systems that are the foundations of enjoyable gameplay, but I also value the importance of a good narrative to enhance a players experience. 
+        ​<br>  
+        In the rare moments I'm not programming, I'm often reading fantasy, working with children and supporting live music - mostly soul and blues! 
+        ​<br>
+        Thank you for stopping by, don't forget to check out my previous projects and LinkedIn!</p>
+  
+
+  </div>
 </div>
 
 
 
 
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey">  
+  <p class="w3-large"><a href="mailto:gabyjemerson18@gmail.com" target="_blank">gabyjemerson18@gmail.com</a></p>
+  <div class="w3-xlarge w3-padding-small">
+    <a href ="https://github.com/GabbaTheHutt18" target="_blank"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+    <a href ="https://gaby18.itch.io/" target="_blank"><i class="fa-brands fa-itch-io w3-hover-opacity"></i></i></a>
+    <a href ="https://www.linkedin.com/in/gabriella-jane-emerson/" target="_blank"><i class="fa-brands fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+ 
+</footer>
 
+
+
+
+<script src ="TempScript.js"></script>
 
 
 </body>
