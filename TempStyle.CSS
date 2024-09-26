@@ -7,9 +7,6 @@ body,h1,h2,h3,h4,h5,h6
 {
     font-family: "Montserrat", sans-serif
 }
-.fa-anchor,.fa-coffee {
-    font-size:200px
-}
 
 .green{
     background-color:#3F7652
@@ -40,3 +37,8 @@ body,h1,h2,h3,h4,h5,h6
   .button:hover{
     background-color:#3F7652;
   }
+
+.gif {
+    border: 10px solid #BADA55;
+    border-radius: 10px;
+}
