@@ -2,13 +2,11 @@ const body = document.body;
 let allProjects = [];
 let filteredProjects = [];
 
-function getProjects(projects, reset = false) {
+function getProjects(projects) {
   const grid = document.getElementById("projects");
   if (!grid) return;
 
-  if (reset) {
-    grid.innerHTML = "";
-  }
+    grid.innerHTML = ""; 
 
   projects.forEach((project) => {
     const article = document.createElement("article");
@@ -64,7 +62,7 @@ function filterProjects() {
 
   currentIndex = 0;
   filteredProjects = filtered;
-  getProjects(filteredProjects, true);
+  getProjects(filteredProjects);
 }
 
 function createFilters({ languages, software }) {
@@ -123,7 +121,7 @@ function resetFilters() {
 
 	currentIndex = 0;
     filteredProjects = allProjects;
-    getProjects(filteredProjects, true);
+    getProjects(filteredProjects);
   });
 }
 
@@ -143,7 +141,7 @@ function initProjects() {
 
       console.log("Loaded projects:", projects); 
 
-      getProjects(filteredProjects, true);
+      getProjects(filteredProjects);
 
     })
     .catch(err => console.error("Error loading projects:", err));
