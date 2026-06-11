@@ -1,28 +1,11 @@
-
 const body = document.body;
-
 let allProjects = [];
 let filteredProjects = [];
 
-//hamburger menu :))
-function hamburgerMenu() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function getProjects(projects, reset = false) {
+function getProjects(projects) {
   const grid = document.getElementById("projects");
   if (!grid) return;
 
-  if (reset) {
-    grid.innerHTML = "";
-  }
-
-  grid.innerHTML = ""; // always fully re-render everything
 
   projects.forEach((project) => {
     const article = document.createElement("article");
@@ -50,7 +33,6 @@ function getProjects(projects, reset = false) {
 }
 
 
-// ===== FILTER PROJECTS =====
 function filterProjects() {
   const selectedLanguages = Array.from(
     document.querySelectorAll('#category_filter input:checked')
@@ -78,18 +60,17 @@ function filterProjects() {
 
   currentIndex = 0;
   filteredProjects = filtered;
-  getProjects(filteredProjects, true);
+  getProjects(filteredProjects);
 }
 
 
-// ===== CREATE FILTER CHECKBOXES =====
 function createFilters({ languages, software }) {
   const categoryList = document.getElementById("category_filter");
   const colorList = document.getElementById("software_filter");
 
   if (!categoryList || !colorList) return;
 
-  // Languages
+
   languages.forEach(lang => {
     const li = document.createElement("li");
     const label = document.createElement("label");
@@ -106,7 +87,6 @@ function createFilters({ languages, software }) {
     input.addEventListener("change", filterProjects);
   });
 
-  // Software
   software.forEach(soft => {
     const li = document.createElement("li");
     const label = document.createElement("label");
@@ -141,18 +121,9 @@ function resetFilters() {
 
 	currentIndex = 0;
     filteredProjects = allProjects;
-    getProjects(filteredProjects, true);
+    getProjects(filteredProjects);
   });
 }
-
-
-function initSorting() {
-  const sortSelect = document.getElementById("select_sort");
-  if (sortSelect) {
-    sortSelect.addEventListener("change", filterProjects);
-  }
-}
-
 
 
 function initProjects() {
@@ -170,7 +141,7 @@ function initProjects() {
 
       console.log("Loaded projects:", projects); 
 
-      getProjects(filteredProjects, true);
+      getProjects(filteredProjects);
 
     })
     .catch(err => console.error("Error loading projects:", err));
@@ -180,8 +151,5 @@ function initProjects() {
 document.addEventListener("DOMContentLoaded", () => {
 	console.log("hello");
   initProjects();
-  initSorting();
   resetFilters();
-  toggleFilterSidebar();
-  handleEscapeClose();
 });

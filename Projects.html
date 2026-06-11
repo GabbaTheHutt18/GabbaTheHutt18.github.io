@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 <title> Gabriella Emerson </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="TempStyle.CSS">
@@ -10,12 +10,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
-<body>
-  <script src ="TempScript.js"></script>
-<!-- Navbar -->
+	<body>
+		<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar green w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa-sharp fa-solid fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large green" href="javascript:void(0);" onclick="hamburgerMenu()" title="Toggle Navigation Menu"><i class="fa-sharp fa-solid fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large green">Home</a>
     <a href="Projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
     <a href="CV.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
@@ -37,155 +36,49 @@
   <i class="fa-solid fa-window-minimize" style="color: #BADA55; font-size: 50px; padding: 15px 32px;"></i>
 </header>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\Ps5BopItIcon.png" alt="Ps5BopItIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Bop It</h1>
-      <h5>Solo Project in C++ using PlayStation 5 Dev kits</h5>
-      <a href ="PS5BopIt.html"><button class="button"><b>Read More</b></button></a>
-    </div>
+		<div id="overlay" class="overlay" aria-hidden="true"></div>
+		<main class="main">
 
-    
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\ClockingOutIcon.png" alt="ClockingOutIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Clocking Out</h1>
-      <h5>Group Project in Godot (GDScript)</h5>
-      <a href ="ClockingOut.html"><button class="button"><b>Read More</b></button></a>
+			<div class="grid_wrap">
+				
+				<form id="filters" aria-label="Project Filters" class="filters-container">
+    <div class="filter-column">
+        <h3 class="tertiary-heading serif">Languages</h3>
+        <fieldset class="filter_items">
+            <ul id="category_filter"></ul>
+        </fieldset>
     </div>
 
-    
-  </div>
-</div>
-
-<!-- Third Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\GameplayProgrammingIcon.png" alt="GameplayProgrammingIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>All Dogs go to Heaven</h1>
-      <h5>Solo Project in Unity (C#)</h5>
-      <a href ="GameplayProgramming.html"><button class="button"><b>Read More</b></button></a>
+    <div class="filter-column">
+        <h3 class="tertiary-heading serif">Software</h3>
+        <fieldset class="filter_items">
+            <ul id="software_filter"></ul>
+        </fieldset>
     </div>
 
-    
-  </div>
-</div>
+    <button id="reset_projects" class="button"  type="button">
+        Reset
+    </button>
+</form>
+							
+              <div id="projects" class="project_grid"></div>
+							<div class="view">
+								View
+								<button aria-label="Grid View">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+										<rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
 
-<!-- Fourth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\AnxietyIcon.png" alt="AnxietyIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Anxiety Antics</h1>
-      <h5>Solo Project in Godot (GDScript)</h5>
-      <a href ="AnxietyAntics.html"><button class="button"><b>Read More</b></button></a>
-    </div>
-
-    
-  </div>
-</div>
-
-<!-- Fifth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\PotionIcon.png" alt="PotionIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Potion Profiteer</h1>
-      <h5>Group Project in Unity (C#)</h5>
-      <a href ="PotionProfiteer.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Sixth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\StandUpSimIcon.png" alt="StandUpSimIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Stand Up Simulator</h1>
-      <h5>Group Project in Unity (C#)</h5>
-      <a href ="StandUpSim.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Seventh Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\ShedIcon.png" alt="ShedIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Shed Card Game</h1>
-      <h5>Solo Project in UE5 (Blueprints)</h5>
-      <a href ="ShedCardGame.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Eighth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\PlatformerIcon.png" alt="PlatformerIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Space Platformer</h1>
-      <h5>Group Project in Unity (C#)</h5>
-      <a href ="Platformer.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Nineth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\AQALogo.png" alt="AQALogo">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>NEA</h1>
-      <h5>Solo Project in Visual Studio (C#, Xaml, SQLite)</h5>
-      <a href ="NEA.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Tenth Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third ">
-      <img src="Assets\ChallengesIcon.png" alt="ChallengesIcon">
-    </div>
-    <div class="w3-twothird w3-center">
-      <h1>Miscellaneous Coding Challenges </h1>
-      <h5>Solo (C#, C++, Python)</h5>
-      <a href ="MiscCoding.html"><button class="button"><b>Read More</b></button></a>
-    </div> 
-  </div>
-</div>
-
-<!-- Footer -->
+		<!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey">  
   <p class="w3-large"><a href="mailto:gabyjemerson18@gmail.com" target="_blank">gabyjemerson18@gmail.com</a></p>
   <div class="w3-xlarge w3-padding-small">
@@ -195,9 +88,7 @@
  </div>
  
 </footer>
-
-
-
-
-</body>
+<script src ="TempScript.js"></script>
+<script src ="Filtering.js"></script>
+	</body>
 </html>

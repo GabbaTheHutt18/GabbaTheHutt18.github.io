@@ -13,13 +13,13 @@ body,h1,h2,h3,h4,h5,h6
 }
 .centered-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically, if needed */
-    height: 100%;           /* Full viewport height, adjust as needed */
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;           
 }
 .pdf-viewer {
-    width: 800px;            /* Fixed width for the PDF viewer */
-    max-width: 100%;         /* Ensure responsiveness */
+    width: 800px;           
+    max-width: 100%;         
 }
 .button {
     background-color: #BADA55; 
@@ -38,7 +38,81 @@ body,h1,h2,h3,h4,h5,h6
     background-color:#3F7652;
   }
 
+
 .gif {
     border: 10px solid #BADA55;
     border-radius: 10px;
+}
+
+.filters-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.projects {
+     border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+    text-align: center;
+
+    height: 400px;           
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects img {
+    width: 100%;
+    height: 200px;
+}
+
+.project-heading {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.grid_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#category_filter,
+#software_filter {
+     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#category_filter li,
+#software_filter li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
