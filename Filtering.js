@@ -2,10 +2,13 @@ const body = document.body;
 let allProjects = [];
 let filteredProjects = [];
 
-function getProjects(projects) {
+function getProjects(projects, reset = false) {
   const grid = document.getElementById("projects");
   if (!grid) return;
 
+  if (reset) {
+    grid.innerHTML = "";
+  }
 
   projects.forEach((project) => {
     const article = document.createElement("article");
@@ -33,6 +36,7 @@ function getProjects(projects) {
 }
 
 
+// ===== FILTER PROJECTS =====
 function filterProjects() {
   const selectedLanguages = Array.from(
     document.querySelectorAll('#category_filter input:checked')
@@ -60,16 +64,14 @@ function filterProjects() {
 
   currentIndex = 0;
   filteredProjects = filtered;
-  getProjects(filteredProjects);
+  getProjects(filteredProjects, true);
 }
-
 
 function createFilters({ languages, software }) {
   const categoryList = document.getElementById("category_filter");
   const colorList = document.getElementById("software_filter");
 
   if (!categoryList || !colorList) return;
-
 
   languages.forEach(lang => {
     const li = document.createElement("li");
@@ -121,7 +123,7 @@ function resetFilters() {
 
 	currentIndex = 0;
     filteredProjects = allProjects;
-    getProjects(filteredProjects);
+    getProjects(filteredProjects, true);
   });
 }
 
@@ -141,7 +143,7 @@ function initProjects() {
 
       console.log("Loaded projects:", projects); 
 
-      getProjects(filteredProjects);
+      getProjects(filteredProjects, true);
 
     })
     .catch(err => console.error("Error loading projects:", err));
