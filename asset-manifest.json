@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/GabbaTheHutt18.github.io/static/css/main.3ef06ac0.css",
+    "main.js": "/GabbaTheHutt18.github.io/static/js/main.44abf8ce.js",
+    "static/js/21.f560f45a.chunk.js": "/GabbaTheHutt18.github.io/static/js/21.f560f45a.chunk.js",
+    "static/js/504.72c3aff9.chunk.js": "/GabbaTheHutt18.github.io/static/js/504.72c3aff9.chunk.js",
+    "static/js/453.d27f2e21.chunk.js": "/GabbaTheHutt18.github.io/static/js/453.d27f2e21.chunk.js",
+    "static/js/944.231ef3ba.chunk.js": "/GabbaTheHutt18.github.io/static/js/944.231ef3ba.chunk.js",
+    "static/media/FunCV.pdf": "/GabbaTheHutt18.github.io/static/media/FunCV.4685da139026c41112ea.pdf",
+    "static/media/pdfium.wasm": "/GabbaTheHutt18.github.io/static/media/pdfium.569ec83ea3ffba099b75.wasm",
+    "static/media/GabriellaEmersonCV.pdf": "/GabbaTheHutt18.github.io/static/media/GabriellaEmersonCV.752c1ad051c45daef7cd.pdf",
+    "static/media/nogard.ttf": "/GabbaTheHutt18.github.io/static/media/nogard.6372d9dac6a9f338af90.ttf",
+    "static/media/fa-solid-900.woff2": "/GabbaTheHutt18.github.io/static/media/fa-solid-900.dcef2f69dbd5989a2e69.woff2",
+    "static/media/fa-brands-400.woff2": "/GabbaTheHutt18.github.io/static/media/fa-brands-400.41062caea457897b1d3b.woff2",
+    "static/media/NavPageBackground.png": "/GabbaTheHutt18.github.io/static/media/NavPageBackground.5eed06385f7482e4c6ec.png",
+    "static/media/HomeBackground.png": "/GabbaTheHutt18.github.io/static/media/HomeBackground.f9f016d89fb064cc3ced.png",
+    "static/media/HomeLeftBar.png": "/GabbaTheHutt18.github.io/static/media/HomeLeftBar.7ea00ab6ab55215264c3.png",
+    "static/media/HomeRightBar.png": "/GabbaTheHutt18.github.io/static/media/HomeRightBar.dbfb4e19277099fe5fa0.png",
+    "static/media/LibraryBackground.png": "/GabbaTheHutt18.github.io/static/media/LibraryBackground.006b58c2a9cefe35af99.png",
+    "static/media/Raven.gif": "/GabbaTheHutt18.github.io/static/media/Raven.971e5b6da175933fe452.gif",
+    "static/media/fa-regular-400.woff2": "/GabbaTheHutt18.github.io/static/media/fa-regular-400.fa2e58edfd73d8341e07.woff2",
+    "static/media/LibLeft.png": "/GabbaTheHutt18.github.io/static/media/LibLeft.3e1803de86d3e40a0e61.png",
+    "static/media/LibRight.png": "/GabbaTheHutt18.github.io/static/media/LibRight.4d7d8dfe28c98487590c.png",
+    "static/media/MeSide.png": "/GabbaTheHutt18.github.io/static/media/MeSide.e60eb32e1d3b4f34f3d5.png",
+    "static/media/fa-v4compatibility.woff2": "/GabbaTheHutt18.github.io/static/media/fa-v4compatibility.2129bf071a83c1d49732.woff2",
+    "index.html": "/GabbaTheHutt18.github.io/index.html",
+    "main.3ef06ac0.css.map": "/GabbaTheHutt18.github.io/static/css/main.3ef06ac0.css.map",
+    "main.44abf8ce.js.map": "/GabbaTheHutt18.github.io/static/js/main.44abf8ce.js.map",
+    "21.f560f45a.chunk.js.map": "/GabbaTheHutt18.github.io/static/js/21.f560f45a.chunk.js.map",
+    "504.72c3aff9.chunk.js.map": "/GabbaTheHutt18.github.io/static/js/504.72c3aff9.chunk.js.map",
+    "453.d27f2e21.chunk.js.map": "/GabbaTheHutt18.github.io/static/js/453.d27f2e21.chunk.js.map",
+    "944.231ef3ba.chunk.js.map": "/GabbaTheHutt18.github.io/static/js/944.231ef3ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ef06ac0.css",
+    "static/js/main.44abf8ce.js"
+  ]
+}
