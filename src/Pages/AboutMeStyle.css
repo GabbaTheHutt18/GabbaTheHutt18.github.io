@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+.aboutMePage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: #351b16;
+}
+
+.aboutLeft,
+.aboutRight {
+    flex: 0 0 25%;
+    width: 25%;
+    height: 100vh;
+    min-width: 0;
+    min-height: 0;
+    background-color: #351b16;
+}
+
+.aboutLeft img,
+.aboutRight img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.aboutCentre {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    min-height: 0;
+
+    z-index: 2;
+}
+
+.topButtons{
+    width:100%;
+    display: flex;
+  gap: 20px;
+  height: 17%;
+  z-index: 9999;
+}
+
+.MeRaven {
+       width: auto;
+    flex: 0 0 auto;
+
+}
+
+.pdfViewerContainer {
+    flex: 1 1 0;
+    width: 100%;
+    height: 0;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+.toggleButton{
+    background-color: #1c0e0c;
+    font-family: "Nogard";
+    color:#cfaa61;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 25%;
+    height: 50%;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+
+}
+.toggleButton:hover{
+    color:#1c0e0c;
+    background-color: #cfaa61;
+    border: 2px solid #351b16;
+}
+
+@media (max-width: 750px) {
+    .aboutLeft,
+    .aboutRight {
+        display: none;
+    }
+
+    .aboutCentre {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}

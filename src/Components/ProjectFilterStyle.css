@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+
+.filter_items input[type="checkbox"] {
+     background-color:#b39b71;
+  accent-color: #49210f;
+}
+.filters-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.filter_items {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.filter_items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter_items li {
+  margin-bottom: 0.5rem;
+}
+
+.resetButton{
+    border: none;
+    color:#b39b71;
+    background-color:#49210f;
+    font-family: "Nogard";
+    
+    box-shadow: none;
+     position: sticky;
+    top: 0;
+    z-index: 10;
+    align-self: flex-start;
+}
+
+.resetButton:hover {
+    background-color: #b39b71;
+    color: #49210f;
+    box-shadow: none;
+}

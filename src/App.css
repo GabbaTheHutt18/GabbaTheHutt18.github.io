@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #2b2d46;
+}
+
+body {
+    overflow: hidden;
+}
+
+@font-face {
+  font-family: "Nogard", sans-serif;
+  src: url("./Assets/nogard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

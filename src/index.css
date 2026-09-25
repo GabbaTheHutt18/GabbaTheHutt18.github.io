@@ -1,0 +1,18 @@
+
+
+code {
+    font-family: "Nogard";
+  src: url("./Assets/nogard.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nogard", sans-serif;
+  src: url("./Assets/nogard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Nogard";
+}

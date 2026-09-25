@@ -1,0 +1,18 @@
+.card{
+    display:flex;
+    border:none;
+}
+
+.filters{
+    width: 50%;
+    flex: 1;
+    border:none;
+}
+
+.projects{
+    width: 50%;
+    flex: 1;
+}
+*{
+  box-sizing: border-box;
+}

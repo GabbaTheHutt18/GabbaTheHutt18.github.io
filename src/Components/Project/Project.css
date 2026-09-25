@@ -1,0 +1,58 @@
+.project-modal-content {
+    width: min(900px, 90vw);
+    height: 90vh;
+
+    display: flex;
+     flex-direction: row;
+}
+
+ .page1,
+ .page2 {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    background-color: #b39b71;
+    scrollbar-color: #b39b71 #49210f;
+}
+
+.page2 p {
+    width: 100%;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+}
+
+.page1 iframe {
+    width: 95%;
+    height: 75%;
+    flex-shrink: 0;
+    border: none;
+}
+
+.closeModel{
+    width: 95%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-self: flex-start;
+    background: #49210f;
+    color: #b39b71;
+    font-family: "nogard", serif;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.closeModel:hover {
+    background: #b39b71;
+    color: #49210f;
+    border: 2px solid #49210f;
+}
