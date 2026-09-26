@@ -1,7 +1,7 @@
 {
   "name": "gabriella-game-dev",
   "version": "0.1.0",
-  "homepage": "https://gamedev-gabriella.co.uk",
+  "homepage": "https://GabbaTheHutt18.github.io",
   "private": true,
   "dependencies": {
     "@embedpdf/core": "^2.15.1",
