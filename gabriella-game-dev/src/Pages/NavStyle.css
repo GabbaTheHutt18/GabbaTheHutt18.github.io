@@ -43,7 +43,7 @@
 .NavButtons {
     position: absolute;
     left: 20%;
-    top: 35%;
+    top: 37%;
     width: 50%;
 }
 
@@ -53,4 +53,22 @@
     padding-top: 10%;
     top: 90%;
     width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .NavButtons {
+        left: 18%;
+        top: 60%;
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .NavButtons {
+        position: absolute;
+        left: 20%;
+        top: 37%;
+        width: 50%;
+    }
 }
