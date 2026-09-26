@@ -69,7 +69,7 @@
 
 .toggleButton{
     background-color: #1c0e0c;
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
     color:#cfaa61;
     border: 2px solid transparent;
     cursor: pointer;

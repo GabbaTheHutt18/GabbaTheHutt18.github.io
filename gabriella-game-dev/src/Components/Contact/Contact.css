@@ -42,7 +42,7 @@ margin-top: 20px;
     font-size: 16px;
     color:#333;
     margin-top: 8px;
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -50,7 +50,7 @@ margin-top: 20px;
 {
     height:200px;
     resize:none ;
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
 }
 
 form button
@@ -66,7 +66,7 @@ form button
     margin-top: 25px;
     transition: .5s;
     background:#49210f;
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
    
 
 }
@@ -127,17 +127,17 @@ align-items: center;
 
 input
 {
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
 }
 
 textarea{
-    font-family: "Nogard";
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
 }
 
 .raven-confirm-button {
     background: #49210f !important;
     color: #b39b71 !important;
-    font-family: "nogard", serif;
+    font-family: "Nogard", Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     padding: 10px 25px;
     border-radius: 5px;
